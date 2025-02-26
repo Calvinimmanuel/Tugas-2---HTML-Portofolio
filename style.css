@@ -1,0 +1,109 @@
+.bg {
+    background-color: maroon;
+    color: white;
+    border-radius: 8px
+}
+
+p,
+a {
+    color: white;
+        text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: maroon;
+}
+
+.nb {
+    border: 0px;
+}
+
+.wb {
+
+    table,
+    th,
+    td {
+        border: 2px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.slider-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+
+.menu label:hover,
+.menu label:focus {
+    background: maroon;
+}
+
+.slide {
+    width: 760px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 4%;
+    transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked+.slide {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.slide-1 {
+    background-image: url("DSC03591.JPG");
+}
+
+.slide-2 {
+    background-image: url("DSC00787.JPG");
+}
+
+.slide-3 {
+    background-image: url("DSC00861.JPG");
+}
+
+.slide-4 {
+    background-image: url("DSC00906.JPG");
+}
+
+.slide-5 {
+    background-image: url("_DSC9715.JPG");
+}
